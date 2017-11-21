@@ -8,9 +8,9 @@ public:
     ~Frame();
     void setPixel(int x, int y, byte r, byte g, byte blue);
     void clear();
-    bool isOutside(double * x, double * y) const;
+    bool isOutside(int x, int y) const;
     void write(FILE * file) const;
-    void clamp(double *x, double *y);
+    void clamp(int x, int y);
 private:
     unsigned char *pixels;
 };
